@@ -2,7 +2,9 @@ import random
 import copy
 import torch
 import numpy as np
-from Prune import Utils
+#from Prune import Utils
+from torch import nn
+import torch.nn.utils.prune as Utils
 
 def get_norm(p):
     p2 = abs(p.detach().cpu().numpy())
